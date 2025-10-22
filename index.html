@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conflitos Ambientais e de Saúde</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            display: none;
+            padding: 20px;
+        }
+        section.active {
+            display: block;
+        }
+        section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 10px;
+        }
+        section p {
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+    <script>
+        function showPage(pageId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+        // Mostrar a primeira seção por padrão
+        window.onload = function() {
+            showPage('problema');
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Conflitos Ambientais e de Saúde</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showPage('problema')">Problema</a>
+        <a href="#" onclick="showPage('solucao')">Solução</a>
+        <a href="#" onclick="showPage('rentabilidade')">Rentabilidade</a>
+        <a href="#" onclick="showPage('concorrentes')">Concorrentes</a>
+    </nav>
+    <main>
+        <section id="problema">
+            <h2>Problema</h2>
+            <p>Os conflitos ambientais e de saúde envolvem questões como poluição do ar e água, desmatamento, mudanças climáticas e doenças relacionadas ao meio ambiente, como alergias, câncer e problemas respiratórios. Esses conflitos surgem de atividades industriais, urbanização descontrolada e falta de regulamentação, levando a disputas entre comunidades, governos e empresas. Exemplos incluem contaminação de rios por indústrias químicas, que causam doenças crônicas em populações locais, e conflitos por recursos naturais em áreas de mineração.</p>
+        </section>
+        <section id="solucao">
+            <h2>Solução</h2>
+            <p>Para resolver esses conflitos, é possível implementar tecnologias sustentáveis, como energias renováveis (solar e eólica) para reduzir emissões, sistemas de tratamento de água e ar, e políticas de conservação, como reflorestamento e regulamentações ambientais rigorosas. Além disso, educação comunitária, monitoramento contínuo e parcerias público-privadas podem ajudar a mitigar riscos à saúde, promovendo diagnósticos precoces e vacinas para doenças ambientais. Soluções inovadoras incluem apps de monitoramento ambiental e programas de compensação para comunidades afetadas.</p>
+        </section>
+        <section id="rentabilidade">
+            <h2>Rentabilidade</h2>
+            <p>Os conflitos ambientais e de saúde podem gerar dinheiro por meio de consultorias ambientais, desenvolvimento de tecnologias verdes (como filtros de ar ou sistemas de reciclagem), vendas de produtos sustentáveis e serviços de auditoria para empresas. Empresas podem lucrar com certificações ecológicas, investimentos em energias limpas e programas de saúde preventiva. Por exemplo, startups que criam soluções para purificação de água podem vender patentes ou serviços a governos e indústrias, gerando receita recorrente. Além disso, fundos de investimento em sustentabilidade atraem capital para projetos rentáveis.</p>
+        </section>
+        <section id="concorrentes">
+            <h2>Concorrentes</h2>
+            <p>No mercado de conflitos ambientais e de saúde, concorrentes incluem empresas como a Environmental Protection Agency (EPA) nos EUA, organizações como Greenpeace e WWF, que focam em advocacy e soluções globais. Empresas privadas como a Siemens (tecnologias verdes) e a Pfizer (saúde ambiental) competem em soluções tecnológicas. Startups como a Ecosphere Technologies (tratamento de água) e consultorias como a McKinsey (assessoria sustentável) são rivais. No Brasil, organizações como o Instituto Brasileiro do Meio Ambiente (IBAMA) e empresas locais de energia renovável, como a AES Brasil, disputam espaço.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Conflitos Ambientais e de Saúde. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
